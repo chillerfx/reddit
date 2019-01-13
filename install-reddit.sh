@@ -100,7 +100,9 @@ echo
 important "Resolving to the appropriate domain name is beyond the scope of this document,"
 important "but the easiest thing is probably editing /etc/hosts on the host machine."
 echo
-read -er -n1 -p "proceed? [Y/n]" response
+important "Change the config to inlude more plugins (eg r/place)"
+
+response = yes
 if [[ $response =~ ^[Yy]$ || $response == "" ]]; then
     echo "Excellent. Here we go!"
     $SCRIPTDIR/reddit.sh
