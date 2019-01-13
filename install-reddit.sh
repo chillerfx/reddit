@@ -102,7 +102,7 @@ important "but the easiest thing is probably editing /etc/hosts on the host mach
 echo
 important "Change the config to inlude more plugins (eg r/place)"
 
-RESPONSE = yes
+RESPONSE=yes
 if [[ $response =~ ^[Yy]$ || $response == "" ]]; then
     echo "Excellent. Here we go!"
     $SCRIPTDIR/reddit.sh
